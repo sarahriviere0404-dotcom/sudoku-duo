@@ -200,3 +200,8 @@ cursor: pointer;
 .joueur2 {
   background-color: #dcfce7;
 }
+
+.meme-chiffre {
+  background-color: #d1d5db !important;
+  font-weight: bold;
+}
