@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Duo</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Sudoku Duo</h1>
+
+  <div id="multijoueur">
+
+  <button id="creer-partie">Créer une partie</button>
+
+  <div id="rejoindre">
+    <input
+      type="text"
+      id="code-partie"
+      placeholder="Code de la partie"
+      maxlength="6"
+    >
+
+    <button id="rejoindre-partie">
+      Rejoindre
+    </button>
+  </div>
+
+  <p id="info-partie"></p>
+
+</div>
+
+  <div id="scores">
+  <div>
+    <strong>Joueur 1</strong>
+    <span id="score-joueur1">0</span> pts
+  </div>
+
+  <div>
+    <strong>Joueur 2</strong>
+    <span id="score-joueur2">0</span> pts
+  </div>
+</div>
+
+  <div id="difficulte">
+  <button data-difficulte="facile">Facile</button>
+  <button data-difficulte="moyen">Moyen</button>
+  <button data-difficulte="difficile">Difficile</button>
+</div>
+
+  <button id="nouvelle-partie">Nouvelle partie</button>
+
+  <div id="sudoku"></div>
+
+  <div id="chiffres">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+  <button>6</button>
+  <button>7</button>
+  <button>8</button>
+  <button>9</button>
+  <button id="effacer">✕</button>
+</div>
+
+  <script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
