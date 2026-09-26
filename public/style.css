@@ -205,3 +205,14 @@ cursor: pointer;
   background-color: #d1d5db !important;
   font-weight: bold;
 }
+
+#difficulte button.actif {
+  background-color: #dceeff;
+  border: 2px solid #555;
+  font-weight: bold;
+}
+
+#difficulte-actuelle {
+  font-weight: bold;
+  margin-top: 8px;
+}
